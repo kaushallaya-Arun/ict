@@ -6,26 +6,24 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensures the container takes at least the full viewport height */
-  }
+    min-height: 100vh;
+}
 
 .container {
     max-width: 80%;
-    margin: auto;
+    margin: 5% auto;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 3%;
     text-align: center;
-    margin-top: 5%;
-    z-index: 1;
     box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    min-height: 80vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,7 +116,6 @@ section {
     background: radial-gradient(#333, #000);
 }
 
-
 h2 {
     position: absolute;
     top: 40%;
@@ -133,32 +130,32 @@ h2 {
 .footer {
     background-color: #f0f0f0;
     color: #000;
-    padding: 8px; /* Adjust the padding to your preference */
+    padding: 8px;
     text-align: center;
     transition: all 0.5s ease;
-    position: relative;
+    position: fixed;
     bottom: 0;
-    font-size: 14px; /* Adjust the font size to your preference */
+    left: 0;
+    right: 0;
+    font-size: 14px;
 }
-    
-  .footer.hiding {
+
+.footer.hiding {
     height: 0;
     padding: 0;
     overflow: hidden;
-  }
-    
-  .footer.hidden {
+}
+
+.footer.hidden {
     display: none;
-  }
-  
-  
+}
+
 @media only screen and (max-width: 600px) {
     .footer {
         padding: 5px;
-        font-size: 12px; /* Adjust the font size for smaller screens */
+        font-size: 12px;
     }
 }
-
 
 #message-container {
     position: fixed;
@@ -172,20 +169,20 @@ h2 {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
 .correct-tick {
     color: #4CAF50;
     background-color: #eaffea;
     font-size: x-large;
     ruby-position: after;
 }
-  
+
 .incorrect-message {
     color: #FF0000;
     background-color: #ffeaea;
     ruby-position: after;
-  }
+}
 
 #startQuizButton {
     background: #001e4d;
@@ -198,9 +195,9 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     display: block;
-    font-size: 18px; /* Adjust the font size to your preference */
+    font-size: 18px;
 }
 
-#owner{
+#owner {
     color: #333;
 }
