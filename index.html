@@ -7,7 +7,6 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="https://raw.githubusercontent.com/kaushallaya-Arun/ict/gh-pages/manifest.json" />
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="min.js"></script>
     <script src="quiz.js"></script>
     <script>
@@ -26,15 +25,7 @@
             }, 500);
         }
 
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('https://raw.githubusercontent.com/kaushallaya-Arun/ict/gh-pages/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-        }
+        // You may have some additional script logic here
     </script>
 </head>
 
