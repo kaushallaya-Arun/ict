@@ -25,9 +25,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
 }
 
-
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
 
 h1 {
     color: black;
@@ -199,23 +204,3 @@ h2 {
 #owner{
     color: #333;
 }
-
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    button {
-        font-size: 16px;
-    }
-
-    .footer {
-        padding: 8px;
-        font-size: 14px;
-    }
-}
-
