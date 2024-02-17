@@ -1,0 +1,16 @@
+{
+  "name": "ICT-MCQ",
+  "short_name": "ICT-MCQ",
+  "description": "This is a simple and user-friendly mcq project by me.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#001e4d",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/kaushallaya-Arun/ict/main/img/icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
