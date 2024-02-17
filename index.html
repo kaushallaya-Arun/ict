@@ -7,20 +7,19 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="min.js"></script>
     <script src="quiz.js"></script>
 </head>
 
 <body>
 
-    
     <div id="welcome-container" class="container">
         <h1>තොරතුරු හා සන්නිවේදන තාක්ෂනය ප්‍රශ්න සදහා සාදරයෙන් පිළිගන්නවා!</h1>
         <div>
             <button id="startQuizButton" onclick="hideFooter()">ආරම්භ කරන්න</button>
         </div>
     </div>
-    
 
     <div id="quiz-container" class="container" style="display: none;">
         <div id="question-container">
@@ -28,64 +27,47 @@
         </div>
         <div id="options-container"></div>
     </div>
-    
-
-   
 
     <footer class="footer" id="myFooter">
-    <p id="owner">A project by Kaushallaya</p>
-    <p>Contact me on telegram <a href="https://t.me/kaushallaya" target="_blank">@kaushallaya</a></p></br>
-      
+        <p id="owner">A project by Kaushallaya</p>
+        <p>Contact me on telegram <a href="https://t.me/kaushallaya" target="_blank">@kaushallaya</a></p></br>
     </footer>
-  
 
+    <script>
+        $(document).ready(function () {
+            $('#startQuizButton').click(function (event) {
+                event.preventDefault();
+                hideFooter();
+                Quiz.startQuiz();
+            });
+        });
 
-<script>
-  $(document).ready(function () {
-    $('#startQuizButton').click(function (event) {
-      event.preventDefault();
-      hideFooter();
-      Quiz.startQuiz();
-    });
-  });
+        function hideFooter() {
+            $('#myFooter').addClass('hiding');
+            setTimeout(function () {
+                $('#myFooter').addClass('hidden');
+            }, 500);
+        }
 
-  function hideFooter() {
-    // Use jQuery to select the footer element and add the 'hiding' class
-    $('#myFooter').addClass('hiding');
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
 
-    // Add a delay before actually hiding the footer
-    setTimeout(function () {
-      // Add the 'hidden' class to the footer
-      $('#myFooter').addClass('hidden');
-    }, 500); // Adjust the delay time as needed (500 milliseconds in this example)
-  }
-</script>
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (event) => {
+            event.preventDefault();
+            deferredPrompt = event;
+            showInstallPromotion();
+        });
+    </script>
 
-
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('Service Worker registered with scope:', registration.scope);
-      })
-      .catch(error => {
-        console.error('Service Worker registration failed:', error);
-      });
-  }
-</script>
-
-<script>// Prompt user to add to home screen
-window.addEventListener('beforeinstallprompt', (event) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  event.preventDefault();
-  // Stash the event so it can be triggered later
-  deferredPrompt = event;
-  // Update UI to notify the user they can add to home screen
-  showInstallPromotion();
-});
-</script>
-
-
-  <div id="message-container"></div>
+    <div id="message-container"></div>
 </body>
+
 </html>
