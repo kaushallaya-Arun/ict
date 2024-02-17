@@ -74,6 +74,16 @@
   }
 </script>
 
+<script>// Prompt user to add to home screen
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later
+  deferredPrompt = event;
+  // Update UI to notify the user they can add to home screen
+  showInstallPromotion();
+});
+</script>
 
 
   <div id="message-container"></div>
