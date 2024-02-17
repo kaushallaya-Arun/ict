@@ -138,6 +138,7 @@ h2 {
     left: 0;
     right: 0;
     font-size: 14px;
+    z-index: 1000; /* Ensure the footer is above other elements */
 }
 
 .footer.hiding {
