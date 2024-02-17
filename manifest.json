@@ -1,8 +1,8 @@
 {
   "name": "ICT-MCQ",
   "short_name": "ICT-MCQ",
-  "description": "This is a simple and user-friendly mcq project by me.",
-  "start_url": "./index.html",
+  "description": "This is a simple and user-friendly MCQ project.",
+  "start_url": "https://raw.githubusercontent.com/kaushallaya-Arun/ict/main/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#001e4d",
