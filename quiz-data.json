@@ -1,53 +1,53 @@
 [
     {
-      "question": "What is the capital of France?",
-      "options": ["London", "Berlin", "Paris", "Madrid", "Rome"],
-      "answer": "Paris"
+        "question": "What does ICT stand for?",
+        "options": ["Information and Computer Technology", "International Communication Technology", "Integrated Circuitry Technology", "Internet and Communication Technology"],
+        "answer": "Information and Computer Technology"
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Earth", "Mars", "Venus", "Jupiter", "Saturn"],
-      "answer": "Mars"
+        "question": "Which programming language is widely used for web development?",
+        "options": ["Python", "Java", "HTML", "C++", "JavaScript"],
+        "answer": "JavaScript"
     },
     {
-      "question": "What is the largest mammal?",
-      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus", "Kangaroo"],
-      "answer": "Blue Whale"
+        "question": "What is the purpose of a firewall in a computer network?",
+        "options": ["To block access to websites", "To prevent unauthorized access and attacks", "To enhance internet speed", "To store data securely", "To create a wireless network"],
+        "answer": "To prevent unauthorized access and attacks"
     },
     {
-      "question": "Who wrote 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain", "Emily Bronte"],
-      "answer": "William Shakespeare"
+        "question": "Which of the following is an example of cloud computing service?",
+        "options": ["Microsoft Word", "Google Drive", "Adobe Photoshop", "Windows Media Player", "Microsoft Excel"],
+        "answer": "Google Drive"
     },
     {
-      "question": "What is the capital of Japan?",
-      "options": ["Beijing", "Seoul", "Bangkok", "Tokyo", "Hanoi"],
-      "answer": "Tokyo"
+        "question": "What does URL stand for?",
+        "options": ["Universal Resource Locator", "Unified Resource Locator", "Ultimate Resource Locator", "Uniform Resource Locator", "Universal Reference Locator"],
+        "answer": "Uniform Resource Locator"
     },
     {
-      "question": "Which element has the chemical symbol 'O'?",
-      "options": ["Oxygen", "Gold", "Iron", "Copper", "Silver"],
-      "answer": "Oxygen"
+        "question": "Which computer component is responsible for performing arithmetic and logical operations?",
+        "options": ["RAM", "CPU", "GPU", "Hard Drive", "Motherboard"],
+        "answer": "CPU"
     },
     {
-      "question": "Who painted the Mona Lisa?",
-      "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Claude Monet", "Michelangelo"],
-      "answer": "Leonardo da Vinci"
+        "question": "What is the function of an operating system?",
+        "options": ["To store files and folders", "To manage computer hardware and software", "To create presentations", "To browse the internet", "To play games"],
+        "answer": "To manage computer hardware and software"
     },
     {
-      "question": "In what year did World War II end?",
-      "options": ["1942", "1945", "1950", "1939", "1941"],
-      "answer": "1945"
+        "question": "Which protocol is used for secure communication over a computer network?",
+        "options": ["HTTP", "FTP", "SSH", "SMTP", "DNS"],
+        "answer": "SSH"
     },
     {
-      "question": "What is the largest ocean on Earth?",
-      "options": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean", "Southern Ocean", "Pacific Ocean"],
-      "answer": "Pacific Ocean"
+        "question": "What is the purpose of a database management system (DBMS)?",
+        "options": ["To display web pages", "To manage and organize data", "To play audio and video files", "To create graphics", "To connect to the internet"],
+        "answer": "To manage and organize data"
     },
     {
-      "question": "Who developed the theory of relativity?",
-      "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking", "Nikola Tesla"],
-      "answer": "Albert Einstein"
-    }
-  ]
-  
+        "question": "Which of the following is a type of computer virus?",
+        "options": ["Trojan Horse", "Spyware", "Adware", "Worm", "All of the above"],
+        "answer": "All of the above"
+    },
+    // ... continue with more questions ...
+]
