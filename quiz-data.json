@@ -5,49 +5,11 @@
       "answer": "Paris"
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "options": ["Earth", "Mars", "Venus", "Jupiter", "Saturn"],
-      "answer": "Mars"
-    },
-    {
-      "question": "What is the largest mammal?",
-      "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus", "Kangaroo"],
-      "answer": "Blue Whale"
-    },
-    {
-      "question": "Who wrote 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain", "Emily Bronte"],
-      "answer": "William Shakespeare"
-    },
-    {
-      "question": "What is the capital of Japan?",
-      "options": ["Beijing", "Seoul", "Bangkok", "Tokyo", "Hanoi"],
-      "answer": "Tokyo"
-    },
-    {
-      "question": "Which element has the chemical symbol 'O'?",
-      "options": ["Oxygen", "Gold", "Iron", "Copper", "Silver"],
-      "answer": "Oxygen"
-    },
-    {
-      "question": "Who painted the Mona Lisa?",
-      "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Claude Monet", "Michelangelo"],
-      "answer": "Leonardo da Vinci"
-    },
-    {
-      "question": "In what year did World War II end?",
-      "options": ["1942", "1945", "1950", "1939", "1941"],
-      "answer": "1945"
-    },
-    {
-      "question": "What is the largest ocean on Earth?",
-      "options": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean", "Southern Ocean", "Pacific Ocean"],
-      "answer": "Pacific Ocean"
-    },
-    {
-      "question": "Who developed the theory of relativity?",
-      "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Stephen Hawking", "Nikola Tesla"],
-      "answer": "Albert Einstein"
+        "question": "තොරතුරු හා සබැදි ස්වර්ණමය න්‍යාය යනු?",
+        "options": ["තොරතුරු දත්ත බවට පත්වන බව", "දත්ත කාලයත් සමග තොරතුරු වන බව", "තොරතුරු වල වටිනාකම වැඩි බව", "දත්ත වල වටිනාකම වැඩි බව","තොරතුරු වල වටිනාකම වැඩි ඒවා ඇති වූ මොහොතේ බව"],
+        "answer": "තොරතුරු වල වටිනාකම වැඩි ඒවා ඇති වූ මොහොතේ බව"
     }
+    
+   
   ]
   
