@@ -1,7 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    background-color: #001e4d;
+    background: linear-gradient(to bottom, #001e4d, #004080);
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,13 +28,6 @@ body {
 @media only screen and (max-width: 600px) {
     .container {
         max-width: 100%;
-    }
-}
-
-/* Add the following styles to address landscape scrolling */
-@media only screen and (max-width: 600px) and (orientation: landscape) {
-    body {
-        overflow-y: scroll;
     }
 }
 
