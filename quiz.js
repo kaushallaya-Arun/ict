@@ -146,3 +146,4 @@ $(document).ready(async function () {
   // Call the hideFooter function
   Quiz.hideFooter();
 });
+
