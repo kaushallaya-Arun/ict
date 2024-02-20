@@ -120,6 +120,15 @@ const Quiz = {
 
   delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+  },
+
+  // Hide the footer after clicking the button
+  hideFooter() {
+    // Get the footer element by its ID
+    var footer = document.getElementById('myFooter');
+
+    // Add the 'hidden' class to the footer
+    footer.classList.add('hidden');
   }
 };
 
@@ -133,13 +142,7 @@ $(document).ready(async function () {
     event.preventDefault();
     Quiz.startQuiz();
   });
-});
 
-// Hide the footer after clicking the button
-function hideFooter() {
-  // Get the footer element by its ID
-  var footer = document.getElementById('myFooter');
-
-  // Add the 'hidden' class to the footer
-  footer.classList.add('hidden');
+  // Call the hideFooter function
+  Quiz.hideFooter();
 });
