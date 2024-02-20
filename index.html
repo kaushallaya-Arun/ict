@@ -7,29 +7,21 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="min.js"></script>
     <script src="quiz.js"></script>
     <script>
         $(document).ready(function () {
             $('#startQuizButton').click(function (event) {
                 event.preventDefault();
-                hideFooter();
+                Quiz.hideFooter(); // Call the method from Quiz object
                 Quiz.startQuiz();
             });
         });
 
-        function hideFooter() {
-            $('#myFooter').addClass('hiding');
-            setTimeout(function () {
-                $('#myFooter').addClass('hidden');
-            }, 500);
-        }
-
-        // You may have some additional script logic here
         document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-});
-
+            e.preventDefault();
+        });
     </script>
 </head>
 
@@ -37,7 +29,7 @@
     <div id="welcome-container" class="container">
         <h1>අ.පො.ස උසස්පෙළ තොරතුරු හා සන්නිවේදන තාක්ෂනය ප්‍රශ්න සදහා සාදරයෙන් පිළිගන්නවා!</h1>
         <div>
-            <button id="startQuizButton" onclick="hideFooter()">ආරම්භ කරන්න</button>
+            <button id="startQuizButton">ආරම්භ කරන්න</button>
         </div>
     </div>
 
@@ -48,9 +40,8 @@
         <div id="options-container"></div>
     </div>
     <div id="js-disabled-message" style="display: none;">
-    <p>Please enable JavaScript in your browser to use this website.</p>
-</div>
-
+        <p>Please enable JavaScript in your browser to use this website.</p>
+    </div>
 
     <footer class="footer" id="myFooter">
         <p id="owner">A project by Kaushallaya</p>
