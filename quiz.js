@@ -31,6 +31,12 @@ const Quiz = {
 
   async loadQuestion() {
     const currentQuizData = this.quizData[this.currentQuestion];
+
+    if (!currentQuizData) {
+      console.error('Quiz data is undefined or empty.');
+      return;
+    }
+
     $('#question-text').text(currentQuizData.question);
 
     const optionsContainer = $('#options-container');
@@ -67,7 +73,8 @@ const Quiz = {
         await this.loadQuestion();
       } else {
         this.hideCorrectAnimation();
-        alert("ප්‍රශ්නපත්‍රය ඉවරයි");
+        // Display a message on the page instead of using alert
+        $('#message-container').text("ප්‍රශ්නපත්‍රය ඉවරයි").show();
       }
     } else {
       this.showIncorrectMessage();
@@ -118,6 +125,9 @@ const Quiz = {
 
 // Document ready
 $(document).ready(async function () {
+  // Check if JavaScript is enabled
+  $('#js-disabled-message').hide();
+
   await Quiz.loadQuizData();
   $('#startQuizButton').click(function (event) {
     event.preventDefault();
@@ -125,12 +135,11 @@ $(document).ready(async function () {
   });
 });
 
-//Hide the footer after cicking the button
+// Hide the footer after clicking the button
 function hideFooter() {
   // Get the footer element by its ID
   var footer = document.getElementById('myFooter');
 
   // Add the 'hidden' class to the footer
   footer.classList.add('hidden');
-}
-  
+});
