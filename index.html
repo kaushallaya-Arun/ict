@@ -4,22 +4,21 @@
 <head>
     <title>ICT බහුවරණ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
-    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'nonce-your-unique-nonce-value'; style-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="styles.css">
     <script src="min.js"></script>
     <script src="quiz.js"></script>
-    <script>
+    <script nonce="your-unique-nonce-value">
         $(document).ready(function () {
             $('#startQuizButton').click(function (event) {
                 event.preventDefault();
                 Quiz.hideFooter(); // Call the method from Quiz object
                 Quiz.startQuiz();
             });
-        });
 
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
         });
     </script>
 </head>
@@ -44,7 +43,7 @@
 
     <footer class="footer" id="myFooter">
         <p id="owner">A project by Kaushallaya</p>
-        <p>Contact me on telegram <a href="https://t.me/kaushallaya" target="_blank">@kaushallaya</a></p></br>
+        <p>Contact me on telegram <a href="https://t.me/kaushallaya" target="_blank">@kaushallaya</a></p><br>
     </footer>
 
     <div id="message-container"></div>
